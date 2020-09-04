@@ -1,0 +1,35 @@
+img { max-height: 50px; }
+
+.topnav-centered a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.topnav a:hover{
+    color:paleturquoise;
+    border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+    
+    color: white;
+    border-bottom: 3px solid red;
+  }
+
+.topnav  {
+    float: none;
+    position: absolute;
+    top: 5%;
+    left: 32%;
+    text-decoration-color: dark;
+  }
+
+ 
+
+
+
+    
