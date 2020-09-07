@@ -1,6 +1,30 @@
-img { max-height: 50px; }
+ img { max-height: 50px; }
 
-.topnav-centered a {
+ nav.navbar{
+     margin-right: 150px;
+     font-size:17px;
+     
+     text-decoration-color: dark;
+ }
+
+ .topnav-centered a:hover{
+
+    color:paleturquoise;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+    
+}
+
+.topnav-centered a.active {
+    
+    color: brown;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+    padding:8px;
+    
+  }
+
+/*.topnav-centered a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -9,16 +33,9 @@ img { max-height: 50px; }
     font-size: 17px;
   }
 
-.topnav a:hover{
-    color:paleturquoise;
-    border-bottom: 3px solid red;
-}
 
-.topnav a.active {
-    
-    color: white;
-    border-bottom: 3px solid red;
-  }
+
+
 
 .topnav  {
     float: none;
@@ -32,4 +49,4 @@ img { max-height: 50px; }
 
 
 
-    
+     */

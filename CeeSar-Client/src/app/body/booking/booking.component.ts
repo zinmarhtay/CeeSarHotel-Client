@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
-  styles: [
+  styles: ['./booking.component.css'
   ]
 })
 export class BookingComponent implements OnInit {
