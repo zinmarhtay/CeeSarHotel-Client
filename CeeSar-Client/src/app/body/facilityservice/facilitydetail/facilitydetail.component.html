@@ -1,0 +1,66 @@
+<div class="serviceImg">
+
+</div>
+<div class="headerTitle">
+    <h3>Fitness Service</h3>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <figure><img src="assets/images/fitness.jpg"></figure>
+        </div>
+
+        <div class="col-md-4">
+            <div class="subTitle">
+                <span class="text1">CeeSar Hotel Fitness Service</span><br>
+                <span class="text2">Eat Real Food. Move Every Day</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-5">
+            <figure><img src="assets/images/fitness3.jpg"></figure>
+        </div>
+        <div class=" offset-1 col-md-6">
+
+            <div class="row">
+                <h4>Fitness With:</h4>
+                <br>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-2"></i>Machine for you arm/back</li>
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-2"></i>Dumbbells</li>
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-2"></i>Flat-screen TV and music</li>
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-2"></i>Water dispenser</li>
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-2"></i>Towels for your convenience</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-3"></i>Treadmill</li>
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-3"></i>Craosstrainer</li>
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-3"></i>Rowing machine</li>
+                        <li class="list-group-item"><i class="fas fa-bahai col-sm-3"></i>Exercise bikes</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="card-deck">
+            <div class="card align-items-center" *ngFor="let contact of contactInfo">
+                <div class="card-body">
+                    <i [class]="contact.icon"></i>
+                    <p>{{contact.content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
