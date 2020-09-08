@@ -1,0 +1,23 @@
+img {
+    width: 400px;
+    height: 200px;
+}
+
+.icon-bar {
+    width: 50%;
+    text-align: center;
+    overflow: auto;
+}
+
+.icon-bar a {
+    width: 20%;
+    padding: 12px 0;
+    float: left;
+    transition: all 0.3s ease;
+    color: rgba(59, 59, 59, 0.801);
+    font-size: 20px;
+}
+
+.active {
+    background-color: #4CAF50;
+}
