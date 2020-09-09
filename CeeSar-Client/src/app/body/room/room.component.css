@@ -1,23 +1,32 @@
-img {
+.img-thumbnail {
     width: 400px;
     height: 200px;
 }
 
 .icon-bar {
-    width: 50%;
-    text-align: center;
     overflow: auto;
 }
 
 .icon-bar a {
-    width: 20%;
-    padding: 12px 0;
-    float: left;
+    width: 10px;
+    padding: 0 6px;
     transition: all 0.3s ease;
     color: rgba(59, 59, 59, 0.801);
-    font-size: 20px;
+    font-size: 16px;
 }
 
-.active {
-    background-color: #4CAF50;
+.roomimg {
+    background-image: url('src/assets/HotelPhoto/RoomPage.jpg');
+    height: 20vh;
+    background-size: auto;
+    background-position: center;
+}
+
+.roomtitle {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
 }
