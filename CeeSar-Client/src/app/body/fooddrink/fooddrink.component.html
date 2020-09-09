@@ -1,1 +1,39 @@
-<p>fooddrink works!</p>
+<div class="serviceImg">
+</div>
+
+<div class="headerTitle">
+    <h4>FOOD AND DRINK</h4>
+</div>
+
+<div class="container my-4">
+
+    <div class="row">
+        <div class="col-md-5 offset-1">
+            <img class="card-img-top img-fluid animated fadeInUp" src="assets/images/f-salad.jpg">
+        </div>
+        <div class="col-md-6 text-center">
+           <h4 class="subTitle  my-5">TASTES FOR EVERY BUD</h4> 
+           <p>At <span class="text-success">CEESAR HOTEL</span>, we make catering simple. You tell us what you like, and our celebrated chefs can whip up healthy and indulgent dishes for every palate.</p>
+        </div>
+        
+    </div>
+
+    <div class="row my-4">
+        <div class="col-md-12 text-center">
+            <h4 >Explore FOOD AND DRINK</h4>
+        </div>
+    </div>
+
+    <div class="row my-2">
+        <div class="col-md-3"  *ngFor="let i of foodinfo">
+            <div class="hovereffect">
+            <div class="card border-light mb-3" style="max-width: 16rem;">
+                <img class="img-responsive" [src]="i.img">
+                <h2>{{i.title}} | {{i.price}}</h2>
+          </div>
+        </div>
+        </div>
+        
+    </div>
+    
+</div>

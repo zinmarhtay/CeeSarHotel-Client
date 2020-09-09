@@ -2,28 +2,34 @@
 </div>
 
 <div class="headerTitle">
-      <h4>Welcome Facility Service</h4>  
+      <h4>Facility Services</h4>
 </div>
 
-<div class="container">
+<div class="container my-4">
       <div class="row">
-      <div class="row align-items-center">
-      <div class="col" [routerLink]="['/facilitydetail']">
-         <figure><img src="assets/images/cover1.jpg"></figure>   
-         <div class="overlay">More Info</div>
+            <div class="row align-items-center">
+                  <div class="col" [routerLink]="['/facilitydetail']">
+                        <label> FITNESS </label>
+                        <figure><img src="assets/images/fitness.jpg"></figure>
+                        <div class="overlay">FITNESS</div>
+
+                  </div>
+                  <div class="col" [routerLink]="['/yoga']">
+                        <label> YOGA </label>
+                        <figure> <img src="assets/images/yoga1.jpg"></figure>
+                        <div class="overlay">YOGA</div>
+
+                  </div>
+                  <div class="col" [routerLink]="['/facilitydetail']">
+                        <label> SUNSHINE </label>
+                        <figure><img src="assets/images/cover.jpg"></figure>
+                        <div class="overlay">Sunshine</div>
+                  </div>
+                  <div class="col" [routerLink]="['/meeting']">
+                        <label> MEETING FACILITIES</label>
+                        <figure><img src="assets/images/meeting1.jpg"></figure>
+                        <div class="overlay">Meeting Facilities</div>
+                  </div>
+            </div>
       </div>
-      <div class="col" [routerLink]="['/facilitydetail']" >
-           <figure> <img src="assets/images/cover2.jpg"></figure>
-           <div class="overlay">More Info</div>
-      </div>
-      <div class="col" [routerLink]="['/facilitydetail']">
-           <figure><img src="assets/images/cover.jpg"></figure> 
-           <div class="overlay">More Info</div>
-      </div>
-      <div class="col" [routerLink]="['/facilitydetail']">
-            <figure><img src="assets/images/facility.jpg"></figure>
-            <div class="overlay">More Info</div>
-      </div>
-      </div>
-</div>
 </div>

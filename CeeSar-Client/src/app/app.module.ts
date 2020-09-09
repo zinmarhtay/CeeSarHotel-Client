@@ -17,6 +17,8 @@ import { BookingComponent } from './body/booking/booking.component';
 import { RouterModule } from '@angular/router';
 import { RoomComponent } from './body/room/room.component';
 import { FacilitydetailComponent } from './body/facilityservice/facilitydetail/facilitydetail.component';
+import { YogaComponent } from './body/facilityservice/yoga/yoga.component';
+import { MeetingComponent } from './body/facilityservice/meeting/meeting.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { FacilitydetailComponent } from './body/facilityservice/facilitydetail/f
     ContactComponent,
     BookingComponent,
     RoomComponent,
-    FacilitydetailComponent
+    FacilitydetailComponent,
+    YogaComponent,
+    MeetingComponent
   ],
   imports: [
     BrowserModule,

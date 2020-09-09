@@ -7,16 +7,13 @@
 
 .headerTitle{
     position: absolute;
-    top:25%;
+    top:23%;
     left: 50%;
     transform: translate(-50%,-50%);
     color:white;
-    font-size: 45px;
+    font-size: 50px;
 }
 
-.container{
-    margin-top: 2%;
-}
 
 img{
     width: 260px;
