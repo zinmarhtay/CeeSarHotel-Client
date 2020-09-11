@@ -1,10 +1,154 @@
-<div class="bookingImg">
-
+<div class="serviceImg"></div>
 
 <div class="headerTitle">
-    Welcome Booking Page
+    <h4>Booking Services</h4>
 </div>
+
+<div class="container m-5">
+
+
+    <form>
+
+        <div class="form-row">
+            <div class="col-md-3">
+                <div class="form-group col">
+                    <label> Check In</label>
+                    <input class="form-control" type="date" value="2080-01-01">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Nights</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group col">
+                    <label>Check Out</label>
+                    <input class="form-control" type="date" value="2080-01-01">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select class="form-control" id="exampleDarkSelect">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+
+
+                </div>
+            </div>
+
+
+            <div class="col-md-2 mt-2">
+                <div class="form-group col">
+                    <button type="button" class="btn btn-outline-info mt-4">Check Availability</button>
+                </div>
+            </div>
+
+        </div>
+        ----------------------------------------------------------
+
+
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Your Reservation
+                </div>
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-8 ">
+                                <label>Check In</label>
+                                <input class="form-control" type="date" placeholder="Check In" value="2020-01-01">
+                            </div>
+                            <div class="col-md-4">
+                                <label>Nights</label>
+                                <select class="form-control" placeholder="1 Adults">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-8 ">
+                                <label>Check Out</label>
+                                <input class="form-control" type="date" placeholder="Check In" value="2020-01-01">
+                            </div>
+                            <div class="col-md-4">
+                                <label>Rooms</label>
+                                <select class="form-control" placeholder="1 Adults" (change)="onChange($event.target.value)">
+                                    <option *ngFor="let room of rooms; let i = index" [value]="i + 1">{{i + 1}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+
+                        <div class="row justify-content-center">
+                            <div class="card" *ngFor="let r of roomList; let i = index">
+
+                                <label class="text-center mt-0 mb-0 ">Room {{i + 1}}</label>
+                                <hr>
+
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label> Adults</label>
+                                        </div>
+                                        <div class="col md-2"><i class="fas fa-minus-circle"></i></div>
+                                        <div class="col md-3"><input type="number" value="1" min="1" class="input-op">
+                                        </div>
+                                        <div class="col-md-2"><i class="fas fa-plus-circle"></i></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label> Children</label>
+                                        </div>
+                                        <div class="col md-2"><i class="fas fa-minus-circle"></i></div>
+                                        <div class="col md-3"><input type="number" value="1" min="1" class="input-op">
+                                        </div>
+                                        <div class="col-md-2"><i class="fas fa-plus-circle"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        ######################################
+
     
+
+    </form>
+
+
+
+
+
 </div>
-
-

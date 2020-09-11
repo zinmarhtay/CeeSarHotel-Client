@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +22,8 @@ import { RoomComponent } from './body/room/room.component';
 import { FacilitydetailComponent } from './body/facilityservice/facilitydetail/facilitydetail.component';
 import { YogaComponent } from './body/facilityservice/yoga/yoga.component';
 import { MeetingComponent } from './body/facilityservice/meeting/meeting.component';
+import { FormsModule } from '@angular/forms';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -38,8 +43,11 @@ import { MeetingComponent } from './body/facilityservice/meeting/meeting.compone
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

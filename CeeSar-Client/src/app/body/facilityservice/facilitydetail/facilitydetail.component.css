@@ -5,12 +5,7 @@
     background-position:center;
 }
 
-hr{
-    width:12rem;
-    height: .1rem;
-    background-color:#6ab04c ;
-    margin: 0 auto 2rem;
-}
+
 .headerTitle{
     position: absolute;
     top:25%;
@@ -20,6 +15,13 @@ hr{
     font-size: 45px;
 }
 
+
+hr{
+    width:12rem;
+    height: .1rem;
+    background-color:#6ab04c ;
+    margin: 0 auto 2rem;
+}
 .subTitle{
     color: black;
     text-transform: uppercase;
