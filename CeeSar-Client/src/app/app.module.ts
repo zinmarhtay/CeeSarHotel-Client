@@ -24,6 +24,8 @@ import { YogaComponent } from './body/facilityservice/yoga/yoga.component';
 import { MeetingComponent } from './body/facilityservice/meeting/meeting.component';
 import { FormsModule } from '@angular/forms';
 import { from } from 'rxjs';
+import { RoomdetailComponent } from './body/room/roomdetail/roomdetail.component';
+import { BookingroomComponent } from './body/booking/bookingroom/bookingroom.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { from } from 'rxjs';
     RoomComponent,
     FacilitydetailComponent,
     YogaComponent,
-    MeetingComponent
+    MeetingComponent,
+    RoomdetailComponent,
+    BookingroomComponent,
   ],
   imports: [
     BrowserModule,

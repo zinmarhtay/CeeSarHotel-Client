@@ -9,6 +9,7 @@ import { MeetingComponent } from './body/facilityservice/meeting/meeting.compone
 import { YogaComponent } from './body/facilityservice/yoga/yoga.component';
 import { FooddrinkComponent } from './body/fooddrink/fooddrink.component';
 import { RoomComponent } from './body/room/room.component';
+import { RoomdetailComponent } from './body/room/roomdetail/roomdetail.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -18,10 +19,12 @@ const routes: Routes = [
   {path: 'food', component: FooddrinkComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'booking', component: BookingComponent},
-  {path:'facilitydetail',component:FacilitydetailComponent},
-  {path:'yoga',component:YogaComponent},
-  {path:'meeting',component:MeetingComponent}
-]
+  {path: 'facilitydetail', component: FacilitydetailComponent},
+  {path: 'yoga', component: YogaComponent},
+  {path: 'meeting', component: MeetingComponent},
+  {path: 'roomdetail' , component: RoomdetailComponent}
+
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

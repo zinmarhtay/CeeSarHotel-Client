@@ -12,7 +12,7 @@ export class FacilitydetailComponent implements OnInit {
     {icon: 'card-icon fa fa-phone fa-2x', content: '(+95) 95076244'},
     {icon: 'card-icon fa fa-map-marker-alt fa-2x', content: '4th Floor'},
     {icon: 'card-icon fa fa-clock fa-2x', content: '5AM-8PM'},
-  ]
+  ];
 
   constructor() { }
 

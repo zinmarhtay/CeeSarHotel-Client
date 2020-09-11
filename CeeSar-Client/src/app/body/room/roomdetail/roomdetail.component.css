@@ -1,0 +1,33 @@
+img {
+    display: block;
+    width: 780px;
+    height: 340px;
+}
+
+.row {
+    margin: 20px;
+}
+
+.icon-bar {
+    width: 90px;
+}
+
+.icon-bar a {
+    display: block;
+    /* Make the links appear below each other instead of side-by-side */
+    padding: 5px 5px;
+    /* Add some padding */
+    color: rgba(59, 59, 59, 0.801);
+    font-size: 14px;
+    /* Increased font-size */
+}
+
+.roomimg {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.input-op {
+    width: 40px;
+}
