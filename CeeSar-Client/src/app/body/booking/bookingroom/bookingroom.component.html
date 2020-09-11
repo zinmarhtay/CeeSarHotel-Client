@@ -32,12 +32,8 @@
                     </div>
                     <div class="col-md-4">
                         <label>Rooms</label>
-                        <select class="form-control" placeholder="1 Adults">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select class="form-control" placeholder="1 Adults" (change)="onChange($event.target.value)">
+                            <option *ngFor="let room of rooms; let i = index" [value]="i + 1">{{i + 1}}</option>
                         </select>
                     </div>
                 </div>
@@ -46,9 +42,9 @@
             <li class="list-group-item">
 
                 <div class="row justify-content-center">
-                    <div class="card">
+                    <div class="card" *ngFor="let r of roomList; let i = index">
 
-                        <label class="text-center mt-0 mb-0 ">Room1</label>
+                        <label class="text-center mt-0 mb-0 ">Room {{i + 1}}</label>
                         <hr>
 
                         <div class="card-body">

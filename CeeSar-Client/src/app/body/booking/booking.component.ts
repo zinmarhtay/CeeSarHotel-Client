@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { __spreadArrays } from 'tslib';
 
-declare let $ :any
+declare let $: any;
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
@@ -9,8 +9,6 @@ declare let $ :any
 })
 export class BookingComponent implements OnInit {
 
-    rooms = Array(10)
-    roomList = Array(1);
 
   constructor() { }
 
@@ -19,7 +17,5 @@ export class BookingComponent implements OnInit {
 
   }
 
-  onChange(value){
-    this.roomList = Array(+value)
-  }
+
 }

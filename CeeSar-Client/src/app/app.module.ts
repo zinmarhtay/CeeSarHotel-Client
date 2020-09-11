@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -50,8 +49,8 @@ import { BookingroomComponent } from './body/booking/bookingroom/bookingroom.com
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
-    FormsModule,
-    BsDatepickerModule.forRoot()
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

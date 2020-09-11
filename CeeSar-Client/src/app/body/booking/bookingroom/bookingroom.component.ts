@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookingroomComponent implements OnInit {
 
+  rooms = Array(10);
+  roomList = Array(1);
+
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  onChange(value){
+    this.roomList = Array(+value);
+  }
 }
