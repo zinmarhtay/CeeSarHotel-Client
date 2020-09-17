@@ -31,3 +31,14 @@ img {
 .input-op {
     width: 40px;
 }
+
+.btn{
+    border:1px solid #FFCC00;
+    padding:10px 30px;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background-color: #FFCC00;
+    color:#000;
+}
