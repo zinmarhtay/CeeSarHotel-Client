@@ -1,37 +1,43 @@
- img { max-height: 50px; }
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+
+img { max-height: 50px; }
 
  nav.navbar{
-     margin-right: 150px;
-     font-size:17px;
      
+     font-family: 'Open Sans', sans-serif;
      text-decoration-color: dark;
+    
+ }
+ .navbar-expand-md .navbar-nav>a:hover{
+    color:#FFCC00;
  }
 
- .topnav-centered a:hover{
 
-    color:paleturquoise;
-    border-bottom: 1px solid red;
+
+.navbar-expand-md .navbar-nav>.active>a:hover,
+.navbar-expand-md .navbar-nav>a:focus {
+  color:#FFCC00;
+  border-bottom: 1px solid;
+}
+
+.navbar-expand-md .navbar-nav>.active{
+    color: #FFCC00;
     text-decoration: none;
     
 }
 
-.topnav-centered a.active {
-    
-    color: brown;
-    border-bottom: 1px solid red;
-    text-decoration: none;
-    padding:8px;
-    
-  }
 
 .btn{
-    border:1px solid black;
+    border:1px solid #FFCC00;
     padding:10px 30px;
-    color:brown;
     text-decoration:none;
 }
 
 .btn:hover{
-    background-color: paleturquoise;
+    background-color: #FFCC00;
     color:#000;
 }
+
+
+
+

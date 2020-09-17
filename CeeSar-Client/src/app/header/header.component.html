@@ -1,29 +1,55 @@
-<nav class="navbar navbar-expand-lg justify-content-end">
-    <div class="topnav-centered">
-        <div class="collapse navbar-collapse">
-            <img alt="Brand" src="assets/images/logo.png" class="img-responsive" />
-            <a class="navbar-brand" class="active" [routerLink]="['/']">CeeSar</a>
+
+    
+    
+<!-- <nav class="navbar navbar-expand-lg justify-content-around bg-light-gray">
+    <div class="topnav-centered mt-4">
+        <div class="collapse navbar-collapse text-uppercase">
+            <img alt="Brand" src="assets/images/logo.png" class="img-responsive mr-3" />
+            <a class="navbar-brand" class="active mr-4" [routerLink]="['/']">Home</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0  ">
 
-                <li class="nav-item">
+                <li class="nav-item mr-4">
                     <a class="nav-link" [routerLink]="['/room']">Room</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item mr-4">
                     <a class="nav-link" [routerLink]="['/facility']">Facility and Services</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item mr-3">
                     <a class="nav-link" [routerLink]="['/food']">Food and Drink</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item mr-3">
                     <a class="nav-link" [routerLink]="['/contact']">Contact</a>
                 </li>
 
             </ul>
 
             <button type="button" class="btn btn-outline-info text-dark" [routerLink]="['/booking']">Book Now</button>
+        </div>
+    </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-md navbar-dark text-light bg-dark text-uppercase">
+    <a href="#" class="navbar-brand mr-4">
+        <img src="assets/images/logo.png" >CeeSar Hotel
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a class="nav-link mr-4 active"  [routerLink]="['/']">Home</a>
+            <a class="nav-link mr-4" [routerLink]="['/room']">Room</a>
+            <a class="nav-link mr-4" [routerLink]="['/facility']">Facility and Services</a>
+            <a class="nav-link mr-4" [routerLink]="['/food']">Food and Drink</a>
+            <a class="nav-link mr-4" [routerLink]="['/contact']">Contact</a>
+            <button type="button" class="btn btn-outline-light text-light mr-4" [routerLink]="['/booking']">Book Now</button>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <a href="#" class="nav-item nav-link">Login</a>
         </div>
     </div>
 </nav>

@@ -1,13 +1,8 @@
 .serviceImg{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('src/assets/images/facility.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('src/assets/images/fitness.jpg');
     height: 20vh;
-}
-
-.bookingImg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0, 5)) url('src/assets/images/cover1.jpg');
-    height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position:center;
 }
 
 .headerTitle{
@@ -22,9 +17,4 @@
 .input-op{
     width:40px;
 }
-.headerTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
