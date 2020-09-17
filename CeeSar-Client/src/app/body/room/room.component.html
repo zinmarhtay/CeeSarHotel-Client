@@ -2,170 +2,44 @@
 </div>
 
 <h4 class="roomtitle">ROOMS</h4>
-<br>
 <div class="container">
 
-    <div class="row">
+    <div class="row mt-5" *ngFor="let room of (rooms$ | async)">
 
         <div class="col-md-4 photo-hotel ">
-            <img src="assets/HotelPhoto/standard.jpg" class="img-thumbnail ">
+            <img [src]="room.photos[0]" class="img-thumbnail ">
         </div>
+
+
 
         <div class="col-md-6">
-            <h3 class="card-title">Standard Room</h3>
-            <p class="card-text">Our Standard Room offer breathtaking views of the city skyline.</p>
+            <h3 class="card-title">{{room.name}}</h3>
+            <p class="card-text">{{room.description}}</p>
 
             <ul>
-                <li> Size: 260 sq ft </li>
-                <li> Beds: 2 Double(s)</li>
+                <li *ngFor="let props of objToArray(room.properties)"><strong>{{props}} :  </strong> {{room.properties[props]}}</li>
             </ul>
+
 
             <div class="icon-bar">
-
-                <a href=""><i class="fas fa-wifi" data-toggle="tooltip" data-placement="top" title="WiFi" ></i></a>
-                <a href=""><i class="fas fa-snowflake" data-toggle="tooltip" data-placement="top" title="A/C"  ></i></a>
-                <a href=""><i class="fas fa-phone" data-toggle="tooltip" data-placement="top" title="Phone" ></i></a>
-                <a href=""><i class="fas fa-tv" data-toggle="tooltip" data-placement="top" title="TV" ></i></a>
-                <a href=""><i class="fas fa-cocktail"data-toogle= "tooltip" data-placement="top" title="Mini Bar" ></i></a>
-                <a href=""><i class="fas fa-utensils" data-toogle= "tooltip" data-placement="top" title="Breakfast"></i></a>
-                <a href=""><i class="fas fa-shower" data-toogle= "tooltip" data-placement="top" title="Shower" ></i></a>
+                <a> <i class="mr-3" *ngFor="let icon of objToArray(room.amenities)" [class]="room.amenities[icon] "></i></a>
 
             </div>
         </div>
 
-
-        <div class="row align-items-end">
-            <div class="col-md-2 ">
-                <h5>From</h5>
-                <i class="fas fa-dollar-sign"></i>150
-                <a [routerLink]="['/roomdetail']" class="btn btn-primary ">Check Detail</a>
+        <div class="col-md-2 align-items-center">
+            <div class="row mt-5  justify-content-center">
+                <label>From</label>
             </div>
-        </div>
+            <div class="row mt-1 justify-content-center">
+                <h3><i class="fas fa-dollar-sign"></i>150</h3>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <a [routerLink]="['/roomdetail' , room.id]" class="btn btn-outline-info text-info ">Check Detail</a>
+            </div>
 
+        </div>
     </div>
-
-    <br>
-    <div class="row ">
-
-        <div class="col-md-4 photo-hotel ">
-            <img src="assets/HotelPhoto/suite.jpg " class="img-thumbnail ">
-        </div>
-
-        <div class="col-md-6 ">
-            <h3 class="card-title ">Suite Room</h3>
-            <p>Our Suite Rooms are the perfect combination of function and comfort.</p>
-
-            <ul>
-                <li> Size: 230 sq ft</li>
-                <li>Beds: 1 Double(s)</li>
-            </ul>
-
-            <div class="icon-bar ">
-
-                <a href=" "><i class="fas fa-wifi " data-toggle="tooltip " data-placement="top " title="WiFi " ></i></a>
-                <a href=" "><i class="fas fa-snowflake " data-toggle="tooltip " data-placement="top " title="A/C "  ></i></a>
-                <a href=" "><i class="fas fa-phone " data-toggle="tooltip " data-placement="top " title="Phone " ></i></a>
-                <a href=" "><i class="fas fa-tv " data-toggle="tooltip " data-placement="top " title="TV " ></i></a>
-                <a href=" "><i class="fas fa-cocktail "data-toogle= "tooltip " data-placement="top " title="Mini Bar " ></i></a>
-                <a href=" "><i class="fas fa-utensils " data-toogle= "tooltip " data-placement="top " title="Breakfast "></i></a>
-                <a href=" "><i class="fas fa-bath " data-toogle= "tooltip " data-placement="top " title="Bathtube " ></i></a>
-                <a href=" "><i class="fas fa-taxi " data-toogle= "tooltip " data-placement="top " title="Taxi " ></i></a>
-
-            </div>
-
-        </div>
-
-        <div class="row align-items-end ">
-            <div class="col-md-2 ">
-                <a href="# " class="btn btn-primary ">Check Detail</a>
-            </div>
-        </div>
-
-
-    </div>
-
-    <br>
-    <div class="row ">
-
-        <div class="col-md-4 photo-hotel ">
-            <img src="assets/HotelPhoto/superior.jpeg " class="img-thumbnail ">
-        </div>
-
-        <div class="col-md-6 ">
-            <h3 class="card-title ">Superior Room</h3>
-            <p>Our Superior Rooms are comfortable, roomy and elegant.</p>
-
-            <ul>
-                <li>Size: 280 sq ft</li>
-                <li>Beds: 1 King(s)</li>
-            </ul>
-
-            <div class="icon-bar ">
-
-                <a href=" "><i class="fas fa-wifi " data-toggle="tooltip " data-placement="top " title="WiFi " ></i></a>
-                <a href=" "><i class="fas fa-snowflake " data-toggle="tooltip " data-placement="top " title="A/C "  ></i></a>
-                <a href=" "><i class="fas fa-phone " data-toggle="tooltip " data-placement="top " title="Phone " ></i></a>
-                <a href=" "><i class="fas fa-tv " data-toggle="tooltip " data-placement="top " title="TV " ></i></a>
-                <a href=" "><i class="fas fa-cocktail "data-toogle= "tooltip " data-placement="top " title="Mini Bar " ></i></a>
-                <a href=" "><i class="fas fa-utensils " data-toogle= "tooltip " data-placement="top " title="Breakfast "></i></a>
-                <a href=" "><i class="fas fa-bath " data-toogle= "tooltip " data-placement="top " title="Bathtube " ></i></a>
-                <a href=" "><i class="fas fa-luggage-cart " data-toogle= "tooltip " data-placement="top " title="Luggage-cart " ></i></a>
-                <a href=" "><i class="fas fa-briefcase " data-toogle= "tooltip " data-placement="top " title="Workspace " ></i></a>
-                <a href=" "><i class="fas fa-shuttle-van " data-toogle= "tooltip " data-placement="top " title="Car "></i></a>
-
-            </div>
-
-        </div>
-
-        <div class="row align-items-end ">
-            <div class="col-md-2 ">
-                <a href="# " class="btn btn-primary ">Check Detail</a>
-            </div>
-        </div>
-
-    </div>
-
-    <br>
-    <div class="row ">
-
-        <div class="col-md-4 photo-hotel ">
-            <img src="assets/HotelPhoto/family.jpeg " class="img-thumbnail ">
-        </div>
-
-        <div class="col-md-6 ">
-            <h3 class="card-title ">Family Room</h3>
-            <p class="card-text ">Our Family Room are wide , comfortable , roomy and elegant for families.</p>
-
-            <ul>
-                <li>Size: 320 sq ft</li>
-                <li>Beds: 2 King(s) </li>
-            </ul>
-
-            <div class="icon-bar ">
-
-                <a href=" "><i class="fas fa-wifi " data-toggle="tooltip " data-placement="top " title="WiFi " ></i></a>
-                <a href=" "><i class="fas fa-snowflake " data-toggle="tooltip " data-placement="top " title="A/C "  ></i></a>
-                <a href=" "><i class="fas fa-phone " data-toggle="tooltip " data-placement="top " title="Phone " ></i></a>
-                <a href=" "><i class="fas fa-tv " data-toggle="tooltip " data-placement="top " title="TV " ></i></a>
-                <a href=" "><i class="fas fa-cocktail " data-toogle= "tooltip " data-placement="top " title="Mini Bar " ></i></a>
-                <a href=" "><i class="fas fa-utensils " data-toogle= "tooltip " data-placement="top " title="Breakfast "></i></a>
-                <a href=" "><i class="fas fa-bath " data-toogle= "tooltip " data-placement="top " title="Bathtube " ></i></a>
-                <a href=" "><i class="fas fa-luggage-cart " data-toogle= "tooltip " data-placement="top " title="Luggage-cart " ></i></a>
-                <a href=" "><i class="fas fa-briefcase " data-toogle= "tooltip " data-placement="top " title="Workspace " ></i></a>
-                <a href=" "><i class="fas fa-shuttle-van " data-toogle= "tooltip " data-placement="top " title="Car "></i></a>
-
-            </div>
-
-        </div>
-
-        <div class="row align-items-end ">
-            <div class="col-md-2 ">
-                <a href="# " class="btn btn-primary ">Check Detail</a>
-            </div>
-        </div>
-
-    </div>
-
-
-
 </div>
+
+<!--[state]="{key : values }"-->

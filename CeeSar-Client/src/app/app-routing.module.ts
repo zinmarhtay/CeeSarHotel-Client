@@ -22,7 +22,7 @@ const routes: Routes = [
   {path: 'facilitydetail', component: FacilitydetailComponent},
   {path: 'yoga', component: YogaComponent},
   {path: 'meeting', component: MeetingComponent},
-  {path: 'roomdetail' , component: RoomdetailComponent}
+  {path: 'roomdetail/:id' , component: RoomdetailComponent}
 
 ];
 @NgModule({

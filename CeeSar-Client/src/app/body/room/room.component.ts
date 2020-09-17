@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { RoomService } from 'src/app/service/room.service';
 
 @Component({
   selector: 'app-room',
@@ -7,17 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomComponent implements OnInit {
 
-  roomprice = [
-      {icon : '<i class="fas fa-dollar-sign"></i>' , price : 150},
-      {icon : '<i class="fas fa-dollar-sign"></i>' , price : 250},
-      {icon : '<i class="fas fa-dollar-sign"></i>' , price : 350},
-      {icon : '<i class="fas fa-dollar-sign"></i>' , price : 450}
-  ];
+  rooms$: Observable<any[]>;
 
 
-  constructor() { }
+  constructor(private roomService: RoomService) { }
 
   ngOnInit(): void {
+    this.rooms$ = this.roomService.getRooms();
   }
 
-}
+  objToArray(obj) {
+   return Object.keys(obj);
+      }
+  }
