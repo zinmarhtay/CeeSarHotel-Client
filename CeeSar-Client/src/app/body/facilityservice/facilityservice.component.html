@@ -2,33 +2,86 @@
 </div>
 
 <div class="headerTitle">
-      <h4>Facility Services</h4>
+      <h4 class="text-uppercase">Facility Services</h4>
 </div>
 
 <div class="container my-4">
-      <div class="row">
+      <div class="row mt-3">
             <div class="row align-items-center">
-                  <div class="col" [routerLink]="['/facilitydetail']">
-                        <label> FITNESS </label>
-                        <figure><img src="assets/images/fitness.jpg"></figure>
-                        <div class="overlay">FITNESS</div>
+
+                  <div class="col-md-3" >
+                        <div class="card" [routerLink]="['/facilitydetail']">
+                              <img class="card-img-top" src="assets/images/fitness.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase">Fitness</h5>
+                              </div>
+                        </div>
 
                   </div>
-                  <div class="col" [routerLink]="['/yoga']">
-                        <label> YOGA </label>
-                        <figure> <img src="assets/images/yoga1.jpg"></figure>
-                        <div class="overlay">YOGA</div>
+                  <div class="col-md-3">
+                        <div class="card"  [routerLink]="['/yoga']">
+                              <img class="card-img-top" src="assets/images/yoga.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="text-center text-uppercase">Yoga</h5>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-3">
+                        <div class="card"  [routerLink]="['/yoga']">
+                              <img class="card-img-top" src="assets/images/facility/sunshine.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="text-center text-dark text-uppercase">sunshine</h5>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-3">
+                        <div class="card"  [routerLink]="['/meeting']">
+                              <img class="card-img-top" src="assets/images/meeting1.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="text-center text-dark text-uppercase">Meeting Facility</h5>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      
+
+      <div class="row mt-5">
+            <div class="row align-items-center">
+
+                  <div class="col-md-3" >
+                        <div class="card" [routerLink]="['/facilitydetail']">
+                              <img class="card-img-top" src="assets/images/facility/laundry.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase">laundry</h5>
+                              </div>
+                        </div>
 
                   </div>
-                  <div class="col" [routerLink]="['/facilitydetail']">
-                        <label> SUNSHINE </label>
-                        <figure><img src="assets/images/cover.jpg"></figure>
-                        <div class="overlay">Sunshine</div>
+                  <div class="col-md-3">
+                        <div class="card"  [routerLink]="['/yoga']">
+                              <img class="card-img-top" src="assets/images/facility/parking.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="text-center text-uppercase">Parking</h5>
+                              </div>
+                        </div>
                   </div>
-                  <div class="col" [routerLink]="['/meeting']">
-                        <label> MEETING FACILITIES</label>
-                        <figure><img src="assets/images/meeting1.jpg"></figure>
-                        <div class="overlay">Meeting Facilities</div>
+                  <div class="col-md-3">
+                        <div class="card"  [routerLink]="['/yoga']">
+                              <img class="card-img-top" src="assets/images/facility/pool.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="text-center text-dark text-uppercase">Swimming Pool</h5>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-3">
+                        <div class="card"  [routerLink]="['/meeting']">
+                              <img class="card-img-top" src="assets/images/meeting1.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                    <h5 class="text-center text-dark text-uppercase">Meeting Facility</h5>
+                              </div>
+                        </div>
                   </div>
             </div>
       </div>
