@@ -160,6 +160,7 @@ export class RoomService {
 
   private rooms$ = from([this._rooms]);
 
+
   findByid(id){
     return this._rooms.find(room => room.id == id );
   }
@@ -167,4 +168,5 @@ export class RoomService {
   getRooms(){
     return this.rooms$;
   }
+
 }

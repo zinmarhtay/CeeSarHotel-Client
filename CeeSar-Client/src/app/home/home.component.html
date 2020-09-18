@@ -1,34 +1,57 @@
 <img class="imgCover" src="assets/images/hc2.jpg">
 
 <div class="bookingform">
-  <app-booking></app-booking>
+    <app-booking></app-booking>
 </div>
+
 
 <div class="subContainer mt-2">
-  <div class="row">
-    <div class="offset-1 col-md-4  mt-5 ">
-      <div class="card">
-        <div class="view overlay">
-          <img class="card-img-top" src="assets/HotelPhoto/standard.jpg"
-            alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title text-center text-info">Standard Room</h4>
-          </div>
+
+    <div class="row">
+
+        <div class=" offset-1 col-md-4 mt-5 ">
+
+            <div class="card" *ngFor="let room of room">
+
+                <div class=" view overlay ">
+
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div *ngFor="let photo of room.photos; let i=index;" class="carousel-item" [ngClass]="{active: !i}">
+                                <img class="d-block w-100" [src]="photo">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-info ">{{room.name}}</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        
-    </div>
-    </div>
-    <div class="offset-1 col-md-5 mt-5 text-white col-form-label-lg ">
-      
-    <h4 class="text-uppercase"> Rooms</h4>
-        <p>Take time to breathe… Combining the essence of Myanmar with Asian and western accents, our 354 intuitively designed N’rooms and suites afford the ultimate in space, tranquility, functionality and comfort.</p>
-        <button type="button" class="btn btn-outline-light text-light mr-4" [routerLink]="['/room']">View All Rooms</button>
-        
-  </div>
+        <div class="offset-1 col-md-5 mt-5 text-white col-form-label-lg ">
 
-</div>
+            <h4 class="text-uppercase "> Rooms</h4>
+            <p>Take time to breathe… Combining the essence of Myanmar with Asian and western accents, our 354 intuitively designed N’rooms and suites afford the ultimate in space, tranquility, functionality and comfort.</p>
+            <button type="button " class="btn btn-outline-light text-light mr-4 " [routerLink]="[ '/room'] ">View All Rooms</button>
 
-<div class="mt-4">
-<app-footer></app-footer>
-</div>
+        </div>
+
+    </div>
+
+    <div class="mt-4 ">
+        <app-footer></app-footer>
+    </div>
