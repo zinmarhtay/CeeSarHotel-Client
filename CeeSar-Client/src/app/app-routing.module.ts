@@ -20,8 +20,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'booking', component: BookingComponent},
   {path: 'facilitydetail', component: FacilitydetailComponent},
-  {path: 'yoga', component: YogaComponent},
-  {path: 'meeting', component: MeetingComponent},
+  {path: 'facility/yoga', component: YogaComponent},
+  {path: 'facility/meeting', component: MeetingComponent},
   {path: 'roomdetail/:id' , component: RoomdetailComponent}
 
 ];

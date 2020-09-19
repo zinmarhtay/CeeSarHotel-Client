@@ -14,6 +14,8 @@ export class RoomService {
 
       name: 'Standard Room',
 
+      price: 150 ,
+
       photos: [
         'assets/HotelPhoto/standard.jpg',
         'assets/HotelPhoto/baesin1.jpg',
@@ -29,7 +31,9 @@ export class RoomService {
 
       },
 
-      description: `Functional and comfortable. Sit back and enjoy one of our brand new 280 square foot Standard Rooms. Complete with courtyard views, stylish decor and natural light, our Standard Rooms are the perfect combination of function and comfort. Ideally
+      shortNote: 'Our Standard Rooms are the perfect combination of function and comfort.',
+
+      description: `Functional and comfortable. Sit back and enjoy one of our brand new 230 square foot Standard Rooms. Complete with courtyard views, stylish decor and natural light, our Standard Rooms are the perfect combination of function and comfort. Ideally
       suited for today’s business or leisure travelers.`,
 
       amenities: {
@@ -48,6 +52,8 @@ export class RoomService {
 
       name: 'Suite Room',
 
+      price: 250 ,
+
       photos: [
         'assets/HotelPhoto/suite.jpg',
         'assets/HotelPhoto/baesin2.jpg',
@@ -62,6 +68,8 @@ export class RoomService {
         Beds: '2 Double(s)'
 
       },
+
+      shortNote: 'Our Suites offer breathtaking views of the city skyline.',
 
       description: `Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. With an open 400 square foot floor plan, the Junior Suites offer the extra space you need to spread out and enjoy the breathtaking views of the city skyline.`,
 
@@ -86,6 +94,8 @@ export class RoomService {
 
       name: 'Superior Room',
 
+      price: 350 ,
+
       photos: [
         'assets/HotelPhoto/superior.jpg',
         'assets/HotelPhoto/baesin3.webp',
@@ -100,6 +110,8 @@ export class RoomService {
         Beds: '1 King(s)'
 
       },
+
+      shortNote: 'Our Superior Rooms are comfortable, roomy and elegant.',
 
       description: `Elegant simplicity. Our Superior Rooms give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.`,
 
@@ -124,6 +136,8 @@ export class RoomService {
 
       name: 'Family Room',
 
+      price: 450 ,
+
       photos: [
         'assets/HotelPhoto/family.jpg',
         'assets/HotelPhoto/baesin4.jpg',
@@ -137,6 +151,8 @@ export class RoomService {
         Size: ' 320 sq ft',
         Beds: '2 King(s)'
       },
+
+      shortNote: 'Our family Rooms are large, wide , roomy & elegant for families',
 
       description: `Family rooms with sofa bed, are modern decorated and offering comfortable hospitality to a family with 2 children, or a company of 4 adults. They are totally soundproofed and equipped with high tech comforts such as high speed internet access, USB ports , smart TV, room cleaning touch system.`,
 

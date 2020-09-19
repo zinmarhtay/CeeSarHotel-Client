@@ -1,80 +1,89 @@
 <div class="container">
-
     <div class="row">
-        <h3><a [routerLink]="['/room']"><i class="fas fa-arrow-circle-left mr-3"></i></a>{{room.name}}</h3>
-    </div>
+        <h3>
+            <a [routerLink]="['/room']"><i class="fas fa-arrow-circle-left mr-3"></i></a
+      >{{ room.name }}
+    </h3>
+  </div>
 
-    <!--For Sub-Container-->
-    <div class="row ">
-        <!--For Images Col-->
-        <div class="col-md-8 ">
-
-
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div *ngFor="let photo of room.photos; let i=index;" class="carousel-item" [ngClass]="{active: !i}">
-                        <img class="d-block w-100" [src]="photo">
-                    </div>
-                </div>
-
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <div class="row mt-5 mr-4">
-
-                <div class="col-md-3">
-                    <label class="font-weight-bold">Properties:</label>
-                </div>
-
-                <div class="col-md-4">
-                    <p *ngFor="let props of objToArray(room.properties)"><strong> {{props}} : </strong> {{room.properties[props]}}</p>
-
-                </div>
-            </div>
-
-            <!--Sec-Row-->
-            <div class="row mt-5 mr-4">
-
-                <div class="col-md-3">
-                    <label class="font-weight-bold">More Info:</label>
-                </div>
-
-                <div class="col-md-8">
-                    <label>{{room.description}}</label>
-                </div>
-
-            </div>
-
-            <!--third-Row-->
-            <div class="row mt-5 mr-4">
-
-                <div class="col-md-3">
-                    <label class="font-weight-bold">Amenities:</label>
-                </div>
-
-                <div class="col-md-4">
-                    <p *ngFor="let icon of objToArray(room.amenities)">
-                        <i [class]="room.amenities[icon]"></i> {{icon}}
-                    </p>
-                </div>
-
-
-
-            </div>
-
+  <!--For Sub-Container-->
+  <div class="row">
+    <!--For Images Col-->
+    <div class="col-md-8">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            *ngFor="let photo of room.photos; let i = index"
+            class="carousel-item"
+            [ngClass]="{ active: !i }"
+          >
+            <img class="d-block w-100" [src]="photo" />
+          </div>
         </div>
 
-        <!--for Booking-->
-        <div class="col-md-4 ">
-
-            <app-bookingroom></app-bookingroom>
-
+        <a class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+    </div>
+    <div class="row mt-5 mr-4">
+        <div class="col-md-3">
+            <label class="font-weight-bold">Properties:</label>
         </div>
 
+        <div class="col-md-4">
+            <p *ngFor="let props of objToArray(room.properties)">
+                <strong> {{ props }} : </strong> {{ room.properties[props] }}
+            </p>
+        </div>
     </div>
+
+    <!--Sec-Row-->
+    <div class="row mt-5 mr-4">
+        <div class="col-md-3">
+            <label class="font-weight-bold">More Info:</label>
+        </div>
+
+        <div class="col-md-8">
+            <label>{{ room.description }}</label>
+        </div>
+    </div>
+
+    <!--third-Row-->
+    <div class="row mt-5 mr-4">
+        <div class="col-md-3">
+            <label class="font-weight-bold">Amenities:</label>
+        </div>
+
+        <div class="col-md-4">
+            <p *ngFor="let icon of objToArray(room.amenities)">
+                <i [class]="room.amenities[icon]"></i> {{ icon }}
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--for Booking-->
+<div class="col-md-4">
+
+    <label>From </label>
+
+    <h3> <i class="fas fa-dollar-sign"></i>{{room.price}} </h3>
+
+    <label class="mb-4">per Night</label>
+    <app-bookingroom></app-bookingroom>
+</div>
+</div>
+</div>
