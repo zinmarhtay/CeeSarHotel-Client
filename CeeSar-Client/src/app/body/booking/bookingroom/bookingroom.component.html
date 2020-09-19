@@ -42,36 +42,45 @@
             <li class="list-group-item">
 
                 <div class="row justify-content-center">
-                    <div class="card" *ngFor="let r of roomList; let i = index">
+                    <div class="card mb-1" *ngFor="let r of roomList; let i = index" style="width:100%;">
 
-                        <label class="text-center mt-0 mb-0 ">Room {{i + 1}}</label>
+                        
+
+                        <div class="card-body ">
+                            <div class=" card-title text-center ">Room {{i + 1}}</div>
                         <hr>
-
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label> Adults</label>
-                                </div>
-                                <div class="col md-2"><i class="fas fa-minus-circle"></i></div>
-                                <div class="col md-3"><input type="number" value="1" min="1" class="input-op">
-                                </div>
-                                <div class="col-md-2"><i class="fas fa-plus-circle"></i></div>
+                        <div class="row">
+                            <div class="col-md-6" style="background-color: rgb(231, 145, 159);">
+                                <label> Adults</label>
                             </div>
+                            <div class="col-md-6 text-center" style="background-color: rgb(174, 32, 230);">
+                               
+                                    <span class=""><i class="fas fa-minus-circle fa"></i>&nbsp;&nbsp;</span>1&nbsp;&nbsp;
+                                    <span class=""><i class="fas fa-plus-circle fa"></i>&nbsp;&nbsp;</span>
+                               
+                            </div>
+                        </div>
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <label> Children</label>
                                 </div>
-                                <div class="col md-2"><i class="fas fa-minus-circle"></i></div>
-                                <div class="col md-3"><input type="number" value="1" min="1" class="input-op">
+                                <div class="col-md-6 text-center">
+                                    <p>
+                                        <span class=""><i class="fas fa-minus-circle fa"></i>&nbsp;&nbsp;</span>1&nbsp;&nbsp;
+                                        <span class=""><i class="fas fa-plus-circle fa"></i>&nbsp;&nbsp;</span>
+                                    </p>
                                 </div>
-                                <div class="col-md-2"><i class="fas fa-plus-circle"></i></div>
                             </div>
 
                         </div>
 
                     </div>
                 </div>
+            </li>
+
+            <li class="list-group-item text-center">
+                <button class="btn btn-outline-dark pr-5 pl-5" [routerLink]="['/checkbooking']" > Check Availability</button>
             </li>
         </ul>
     </div>

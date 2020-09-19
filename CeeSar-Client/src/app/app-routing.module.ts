@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { BookingComponent } from './body/booking/booking.component';
+import { CheckbookingComponent } from './body/booking/checkbooking/checkbooking.component';
 import { ContactComponent } from './body/contact/contact.component';
 import { FacilitydetailComponent } from './body/facilityservice/facilitydetail/facilitydetail.component';
 import { FacilityserviceComponent } from './body/facilityservice/facilityservice.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path: 'facilitydetail', component: FacilitydetailComponent},
   {path: 'yoga', component: YogaComponent},
   {path: 'meeting', component: MeetingComponent},
-  {path: 'roomdetail/:id' , component: RoomdetailComponent}
+  {path: 'roomdetail/:id' , component: RoomdetailComponent},
+  {path:'checkbooking',component:CheckbookingComponent}
 
 ];
 @NgModule({
