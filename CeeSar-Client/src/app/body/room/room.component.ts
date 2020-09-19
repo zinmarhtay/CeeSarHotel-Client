@@ -16,9 +16,12 @@ export class RoomComponent implements OnInit {
 
   ngOnInit(): void {
     this.rooms$ = this.roomService.getRooms();
+
   }
 
   objToArray(obj) {
-   return Object.keys(obj);
-      }
+
+    return Object.keys(obj);
+  
+  }
   }

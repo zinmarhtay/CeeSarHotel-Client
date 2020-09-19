@@ -24,7 +24,10 @@ const routes: Routes = [
   {path: 'yoga', component: YogaComponent},
   {path: 'meeting', component: MeetingComponent},
   {path: 'roomdetail/:id' , component: RoomdetailComponent},
-  {path:'checkbooking',component:CheckbookingComponent}
+  {path:'checkbooking',component:CheckbookingComponent},
+  {path: 'facility/yoga', component: YogaComponent},
+  {path: 'facility/meeting', component: MeetingComponent},
+  {path: 'roomdetail/:id' , component: RoomdetailComponent}
 
 ];
 @NgModule({

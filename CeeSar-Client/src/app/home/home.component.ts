@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+
+import { RoomService } from '../service/room.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  room;
+
+  
+
+  constructor(private roomService: RoomService , private  route: ActivatedRoute) { }
 
   ngOnInit(): void {
-  }
-
+    this.roomService.getRooms().subscribe( data => this.room = data);
+    console.log(this.room);
+   
+   }
 }
